@@ -1,99 +1,89 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    
-    <title>Sistema TPS</title>
+    <link rel="stylesheet" href="stylesheets\style.css/">
+
+    <title>Tipos de Sistemas</title>
   </head>
+  <body background="https://img-cdn.hipertextual.com/files/2017/03/color-degradado-fondos-degradados-multicolor-51200.jpg?strip=all&lossy=1&quality=70&ssl=1">
+    <div class="jumbotron text-center" style="background-color: cornflowerblue" >
+      <h1>Sistema TPS</h1>
+      <h3>Transaction Processing System</h3>
+    </div>
 
-  <body>
 
-    <h1>Sistema TPS</h1>
-    <h2>Transaction Processing System</h2>
+    <div class="container">
+      <div class="panel panel-default">
 
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
+        <p>Su principal objetivo es llevar el registro de actividades y operaciones
+    en una empresa evitando su perdida y/o corrupción ante fallos. Por
+    ejemplo: Depositos en efectivo, pago de recibos, transferencias
+    monetarias, flujos de producción, registros de empleados, envios,
+    entre otros.</p>
 
-    <p>Su principal objetivo es llevar el registro de actividades y operaciones
-en una empresa evitando su perdida y/o corrupción ante fallos. Por
-ejemplo: Depositos en efectivo, pago de recibos, transferencias
-monetarias, flujos de producción, registros de empleados, envios,
-entre otros, llamados transacciones.</p>
+        <p></p>
+        <p></p>
+        <p></p>
 
-    <p></p>
-    <p></p>
-    <p></p>
+        <p>Los TPS permiten consultar el estado de las operaciones en cualquier
+          momento.</p>
 
-    <p>Los TPS permiten consultar el estado de las operaciones en cualquier
-      momento.</p>
+        <p></p>
+        <p></p>
+        <p></p>
 
-    <p></p>
-    <p></p>
-    <p></p>
+        <p>Una transacción es un intercambio de información que es reflejada en
+    un medio persistente, y debe contar con las
+    siguientes caracteristicas:</p>
 
-    <p>Una transacción es un intercambio de información que es reflejada en
-un medio persistente, y debe contar con las
-siguientes caracteristicas:</p>
+        <p></p>
 
-    <p></p>
+        <ul>
+            <li><b>Atomicidad:</b> Se refiere a que la transacción debe ser completada en su totalidad o
+    en su defecto debe realizarse una restauración del proceso a su
+    estado original (antes iniciar la transacción).</li>
 
-    <ul>
-        <li>Atomicidad: Se refiere a que la transacción debe ser completada en su totalidad o
-en su defecto debe realizarse una restauración del proceso a su
-estado original (antes iniciar la transacción).</li>
+            <li><b>Consistencia:</b> Se debe salvaguardar la integridad de la información cumpliendo
+    reglas relacionales y de negocio. El sistema debe ser capaz de identificar transacciones que vayan en
+    contra este principio y debe realizar una operación de roll-back.</li>
+
+            <li><b>Aislamiento:</b> Cada transacción debe ser considerada independiente de otras
+    transacciones. Esto permite que el sistema realice transacciones recurrentes y
+    simultaneas.</li>
+
+            <li><b>Durabilidad (Persistencia):</b> La transacciones y sus operaciones internas deben ser almacenadas a
+    un medio persistente, hasta el momento que otra operación o
+    transacción cambie el estado de los datos. En todo momento las transacciones aisladas pueden ser consultadas.</li>
+        </ul>
+
+        <h5>Arquitectura tradicional de un TPS</h5>
 
         </br>
 
-        <li>Consistencia: Se debe salvaguardar la integridad de la información cumpliendo
-reglas relacionales y de negocio. El sistema debe ser capaz de identificar transacciones que vayan en
-contra este principio y debe realizar una operación de roll-back.</li>
+        <center>
+            <img src="../images/ArquiTPS.png" width="500px" height="250px"> <!--width=ancho y height=alto -->
+        </center>
 
         </br>
 
-        <li>Aislamiento: Cada transacción debe ser considerada independiente de otras
-transacciones. Esto permite que el sistema realice transacciones recurrentes y
-simultaneas.</li>
+        <h4>Áreas de uso de los TPS:</h4>
 
-        </br>
+        <ul>
+          <li>Sistemas de inventario.</li>
 
-        <li>Durabilidad (Persistencia): La transacciones y sus operaciones internas deben ser almacenadas a
-un medio persistente, hasta el momento que otra operación o
-transacción cambie el estado de los datos. En todo momento las transacciones aisladas pueden ser consultadas.</li>
-    </ul>
+          <li>Sistemas de producción.</li>
 
-    <h3>Arquitectura tradicional de un TPS</h3>
+          <li>Sistemas de contabilidad y finanzas.</li>
 
-    <img src="../images/ArquiTPS.png" width="500px" height="300px"></img>
+          <li>Sistemas de recursos humanos.</li>
 
-    </br>
+          <li>Sistemas de ventas.</li>
+        </ul>
 
-    <h3>Áreas de uso de los TPS:</h3>
-
-    <ul>
-      <li>Sistemas de inventario.</li>
-
-      </br>
-
-      <li>Sistemas de producción.</li>
-
-      </br>
-
-      <li>Sistemas de contabilidad y finanzas.</li>
-
-      </br>
-
-      <li>Sistemas de recursos humanos.</li>
-
-      </br>
-
-      <li>Sistemas de ventas.</li>
-    </ul>
+      </div>
+    </div>
 
   </body>
 </html>

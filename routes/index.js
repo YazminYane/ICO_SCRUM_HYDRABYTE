@@ -54,7 +54,7 @@ router.get("/tipos/mis", function(req, res, next) {
 
 //Apartado:
 router.get("/metodologias", function(req, res, next) {
-  res.redirect('/html/metodololiaScrum.html');
+  res.redirect('/html/metodologiaScrum.html');
 });
 
 //Scrum:

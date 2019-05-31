@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheets\style.css/">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <title>Tipos de Sistemas</title>
+  </head>
+  <body background="https://img-cdn.hipertextual.com/files/2017/03/color-degradado-fondos-degradados-multicolor-51200.jpg?strip=all&lossy=1&quality=70&ssl=1">
+    <div class="jumbotron text-center" style="background-color: cornflowerblue" >
+  <h1>Tipos de Sistemas.</h1>
+</div>
+
+<div class="container">
+  <h2>Indice.</h2>
+  <p>Teclea el tipo de sistema que buscas.</p>
+  <input class="form-control" id="myInput" type="text" placeholder="Busca...">
+  <br>
+  <ul class="list-group" id="myList">
+    <a href="/tipos/tps"><li class="list-group-item">Definicion de TPS.</li></a>
+    <a href="/tipos/crm"><li class="list-group-item">Definicion de CRM.</li></a>
+    <a href="/tipos/mis"><li class="list-group-item">Definicion de MIS.</li></a>
+  </ul>
+</div>
+
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myList li").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+</div>
+</div>
+
+  </body>
+</html>

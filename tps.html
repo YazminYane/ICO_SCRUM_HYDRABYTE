@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Sistema TPS</title>
+  </head>
+
+  <body>
+
+    <h1>Sistema TPS</h1>
+    <h2>Transaction Processing System</h2>
+
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+
+    <p>Su principal objetivo es llevar el registro de actividades y operaciones
+en una empresa evitando su perdida y/o corrupción ante fallos. Por
+ejemplo: Depositos en efectivo, pago de recibos, transferencias
+monetarias, flujos de producción, registros de empleados, envios,
+entre otros, llamados transacciones.</p>
+
+    <p></p>
+    <p></p>
+    <p></p>
+
+    <p>Los TPS permiten consultar el estado de las operaciones en cualquier
+      momento.</p>
+
+    <p></p>
+    <p></p>
+    <p></p>
+
+    <p>Una transacción es un intercambio de información que es reflejada en
+un medio persistente, y debe contar con las
+siguientes caracteristicas:</p>
+
+    <p></p>
+
+    <ul>
+        <li>Atomicidad: Se refiere a que la transacción debe ser completada en su totalidad o
+en su defecto debe realizarse una restauración del proceso a su
+estado original (antes iniciar la transacción).</li>
+
+        </br>
+
+        <li>Consistencia: Se debe salvaguardar la integridad de la información cumpliendo
+reglas relacionales y de negocio. El sistema debe ser capaz de identificar transacciones que vayan en
+contra este principio y debe realizar una operación de roll-back.</li>
+
+        </br>
+
+        <li>Aislamiento: Cada transacción debe ser considerada independiente de otras
+transacciones. Esto permite que el sistema realice transacciones recurrentes y
+simultaneas.</li>
+
+        </br>
+
+        <li>Durabilidad (Persistencia): La transacciones y sus operaciones internas deben ser almacenadas a
+un medio persistente, hasta el momento que otra operación o
+transacción cambie el estado de los datos. En todo momento las transacciones aisladas pueden ser consultadas.</li>
+    </ul>
+
+    <h3>Arquitectura tradicional de un TPS</h3>
+
+    <img src="img/ArquiTPS.png" width="500px" height="300px"></img>
+
+  </body>
+</html>

@@ -6,3 +6,25 @@ body {
 a {
   color: #00B7FF;
 }
+
+.btn-primary {
+  background-color:#D3B3E8; color: #FFF
+
+}
+.btn-primary:hover{background-color: #FF4BE9}
+
+div.tarjeta {
+  display: block;
+  background-color: #FFFFFF;
+  margin: 0% 10%;
+  border-radius: 5px;
+  box-shadow: 0 3px 7px -1px rgba(#000, .1);
+  padding: 10px;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.btn {
+  opacity: 1.0
+  filter: alpha(opacity=40)
+}
